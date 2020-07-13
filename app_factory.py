@@ -16,7 +16,7 @@ def create_app(cfg_filename=None):
         name = request.args["name"]
         email = request.args["email"]
         try:
-            utils.send_deferred_email(mail_server, name, email)
+            utils.send_deferred_email(app, mail_server, name, email)
             user = User(name, email)
             db.session.add(user)
             db.session.commit()
