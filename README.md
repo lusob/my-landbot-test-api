@@ -5,7 +5,8 @@ This flask application implements a REST API that will receive user data data (u
 
 ## Docker installation:
 
-    $ docker build -t landbotio_users_api https://github.com/lusob/my-landbot-test-api.git
+    $ docker build -t my-landbot-test-api https://github.com/lusob/my-landbot-test-api.git
+
     $ docker run -p 5000:5000 my-landbot-test-api
 
 
